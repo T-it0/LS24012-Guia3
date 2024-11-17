@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+p {
+    font-size: 1.2em;
+}
+#caja {
+    background-color: #87CEEB;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    #caja {
+        width: 80%;
+        background-color: #FF6347;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #caja {
+        width: 70%;
+        padding: 30px;
+        background-color: #FFD700;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    #caja {
+        width: 60%;
+        background-color: #32CD32;
+    }
+}

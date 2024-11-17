@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+#contenido {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilos para las secciones de equipos */
+.equipo {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.equipo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.equipo h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.equipo p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #666;
+}
+
+/* Pie de página */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipo {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+    }
+    .equipo h3 {
+        font-size: 1.3em;
+    }
+    .equipo p {
+        font-size: 0.9em;
+    }
+}
